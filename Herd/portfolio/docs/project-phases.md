@@ -39,7 +39,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 1.2: Core domain tables and migrations
 
-#### Task 1.2.1 — Create `projects` table + migration (**Pending**)
+#### Task 1.2.1 — Create `projects` table + migration (**Completed**)
 - Columns:
   - `id`, `title`, `slug` (unique), `summary`, `description` (longText), `live_url` nullable, `repo_url` nullable
   - `featured` boolean default false
@@ -53,7 +53,7 @@ Automated feature tests (acceptance criteria):
   - Assert unique index for `slug`.
   - Assert default for `featured` is false.
 
-#### Task 1.2.2 — Create `service_requests` table + migration (**Pending**)
+#### Task 1.2.2 — Create `service_requests` table + migration (**Completed**)
 - Columns:
   - `id`, `name`, `email`, `company` nullable
   - `project_type` string (comment with initial values: website-design-development, custom-web-app, maintenance-support)
@@ -69,7 +69,7 @@ Automated feature tests (acceptance criteria):
   - Assert expected columns and defaults exist.
   - Assert `status` default is `new`.
 
-#### Task 1.2.3 — Create `contact_requests` table + migration (**Pending**)
+#### Task 1.2.3 — Create `contact_requests` table + migration (**Completed**)
 - Columns:
   - `id`, `name`, `email`, `phone` nullable, `message` text
   - `status` string default `new` (comment initial values: new, read, replied)
@@ -82,7 +82,7 @@ Automated feature tests (acceptance criteria):
   - Assert expected columns exist.
   - Assert `status` default is `new`.
 
-#### Task 1.2.4 — Create optional lookup tables only if values become dynamic (**Pending, conditional**)
+#### Task 1.2.4 — Create optional lookup tables only if values become dynamic (**Completed, conditional**)
 - If owner needs editable lists in admin:
   - `service_types`
   - `budget_ranges`
@@ -95,7 +95,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 1.3: Eloquent models and casts
 
-#### Task 1.3.1 — Create models: `Project`, `ServiceRequest`, `ContactRequest` (**Pending**)
+#### Task 1.3.1 — Create models: `Project`, `ServiceRequest`, `ContactRequest` (**Completed**)
 - Add fillable/guarded policy-safe defaults.
 - Add casts:
   - booleans for `featured`
@@ -108,7 +108,7 @@ Automated feature tests (acceptance criteria):
 - `tests/Feature/Models/RequestModelsTest.php`
   - Assert status defaults for both request models.
 
-#### Task 1.3.2 — Integrate package traits on models (**Pending**)
+#### Task 1.3.2 — Integrate package traits on models (**Completed**)
 - `Project`:
   - `InteractsWithMedia` for thumbnails
   - `HasTags` for tech stack tags
@@ -123,7 +123,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 1.4: Factories and seeders
 
-#### Task 1.4.1 — Create factories for all domain models (**Pending**)
+#### Task 1.4.1 — Create factories for all domain models (**Completed**)
 - `ProjectFactory`, `ServiceRequestFactory`, `ContactRequestFactory`.
 - Add factory states for important statuses.
 
@@ -132,7 +132,7 @@ Automated feature tests (acceptance criteria):
   - Each factory creates valid persisted record.
   - Status states produce expected values.
 
-#### Task 1.4.2 — Create seeders for realistic starter content (**Pending**)
+#### Task 1.4.2 — Create seeders for realistic starter content (**Completed**)
 - `ProjectSeeder` with featured + non-featured sample projects.
 - Optional `DemoLeadSeeder` for local/testing only.
 
