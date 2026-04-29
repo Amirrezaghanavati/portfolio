@@ -1,7 +1,13 @@
 <?php
 
-test('the application returns a successful response', function () {
-    $response = $this->get('/');
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
-    $response->assertStatus(200);
+use function Pest\Laravel\get;
+
+uses(RefreshDatabase::class);
+
+test('the application returns a successful response', function () {
+    $response = get('/');
+
+    $response->assertSuccessful();
 });

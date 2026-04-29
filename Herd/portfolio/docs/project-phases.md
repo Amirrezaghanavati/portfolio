@@ -147,7 +147,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 2.1: Frontend shell and routing
 
-#### Task 2.1.1 — Build global layout, nav, footer, semantic wrappers (**Pending**)
+#### Task 2.1.1 — Build global layout, nav, footer, semantic wrappers (**Completed**)
 - Implement semantic `<header>`, `<main>`, `<footer>` shell.
 
 Automated feature tests (acceptance criteria):
@@ -155,7 +155,7 @@ Automated feature tests (acceptance criteria):
   - Public pages return success.
   - Response contains semantic wrapper elements.
 
-#### Task 2.1.2 — Register all public routes and names (**Pending**)
+#### Task 2.1.2 — Register all public routes and names (**Completed**)
 - Routes: home, portfolio, about, resume, services, contact, resume download.
 
 Automated feature tests (acceptance criteria):
@@ -165,7 +165,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 2.2: SPA-like navigation (US-1.1)
 
-#### Task 2.2.1 — Implement Livewire-driven navigation behavior (**Pending**)
+#### Task 2.2.1 — Implement Livewire-driven navigation behavior (**Completed**)
 - Active nav link, browser history, page title updates, scroll reset.
 
 Automated feature tests (acceptance criteria):
@@ -178,14 +178,14 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 2.3: Responsive + dark mode baseline (US-1.2, US-1.3)
 
-#### Task 2.3.1 — Mobile-first responsive foundation (**Pending**)
+#### Task 2.3.1 — Mobile-first responsive foundation (**Completed**)
 
 Automated feature tests (acceptance criteria):
 - `tests/Browser/ResponsiveLayoutSmokeTest.php`
   - Core pages render without JS errors.
   - No horizontal overflow at common mobile viewport.
 
-#### Task 2.3.2 — Dark mode toggle with persisted preference (**Pending**)
+#### Task 2.3.2 — Dark mode toggle with persisted preference (**Completed**)
 
 Automated feature tests (acceptance criteria):
 - `tests/Browser/DarkModePreferenceTest.php`
@@ -198,7 +198,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 3.1: Home page (US-2.1 to US-2.5)
 
-#### Task 3.1.1 — Hero, stack strip, featured projects, services snapshot, bottom CTA (**Pending**)
+#### Task 3.1.1 — Hero, stack strip, featured projects, services snapshot, bottom CTA (**Completed**)
 
 Automated feature tests (acceptance criteria):
 - `tests/Feature/Pages/HomePageTest.php`
@@ -209,7 +209,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 3.2: About page (US-4.1, US-4.2)
 
-#### Task 3.2.1 — Bio, avatar, skills grouping, experience timeline (**Pending**)
+#### Task 3.2.1 — Bio, avatar, skills grouping, experience timeline (**Completed**)
 
 Automated feature tests (acceptance criteria):
 - `tests/Feature/Pages/AboutPageTest.php`
@@ -218,7 +218,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 3.3: Resume page (US-5.1, US-5.2)
 
-#### Task 3.3.1 — Inline PDF viewer with fallback (**Pending**)
+#### Task 3.3.1 — Inline PDF viewer with fallback (**Completed**)
 
 Automated feature tests (acceptance criteria):
 - `tests/Feature/Pages/ResumePageTest.php`
@@ -226,7 +226,7 @@ Automated feature tests (acceptance criteria):
   - Contains iframe/embed with storage-backed resume URL.
   - Shows fallback message when resume missing.
 
-#### Task 3.3.2 — Resume download endpoint (**Pending**)
+#### Task 3.3.2 — Resume download endpoint (**Completed**)
 
 Automated feature tests (acceptance criteria):
 - `tests/Feature/Resume/DownloadResumeTest.php`
@@ -240,7 +240,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 4.1: Portfolio listing (US-3.1)
 
-#### Task 4.1.1 — Project grid, sorting, pagination, empty state (**Pending**)
+#### Task 4.1.1 — Project grid, sorting, pagination, empty state (**Completed**)
 
 Automated feature tests (acceptance criteria):
 - `tests/Feature/Portfolio/PortfolioListTest.php`
@@ -250,7 +250,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 4.2: Filtering & search (US-3.2, US-3.3)
 
-#### Task 4.2.1 — Tag-pill filtering with multi-select (**Pending**)
+#### Task 4.2.1 — Tag-pill filtering with multi-select (**Completed**)
 
 Automated feature tests (acceptance criteria):
 - `tests/Feature/Portfolio/PortfolioFilterTest.php`
@@ -258,7 +258,7 @@ Automated feature tests (acceptance criteria):
   - Clear filters resets set.
   - Pagination resets to first page after filter change.
 
-#### Task 4.2.2 — Live title search (**Pending**)
+#### Task 4.2.2 — Live title search (**Completed**)
 
 Automated feature tests (acceptance criteria):
 - `tests/Feature/Portfolio/PortfolioSearchTest.php`
@@ -268,7 +268,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 4.3: Project modal accessibility (US-3.4)
 
-#### Task 4.3.1 — Alpine modal with a11y requirements (**Pending**)
+#### Task 4.3.1 — Alpine modal with a11y requirements (**Completed**)
 
 Automated feature tests (acceptance criteria):
 - `tests/Browser/PortfolioModalAccessibilityTest.php`
@@ -336,7 +336,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 6.1: Projects resource (US-8.1)
 
-#### Task 6.1.1 — Build Filament `ProjectResource` with separate schema/table classes (**Pending**)
+#### Task 6.1.1 — Build Filament `ProjectResource` with separate schema/table classes (**Completed**)
 - Use Filament v5 structure:
   - `Schemas/ProjectForm.php`
   - `Tables/ProjectsTable.php`
@@ -352,7 +352,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 6.2: Service requests resource (US-8.2)
 
-#### Task 6.2.1 — Build read-focused `ServiceRequestResource` with status updates (**Pending**)
+#### Task 6.2.1 — Build read-focused `ServiceRequestResource` with status updates (**Completed**)
 - Disable create action.
 - Keep delete for spam cleanup.
 
@@ -364,7 +364,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 6.3: Contact requests resource (US-8.3)
 
-#### Task 6.3.1 — Build read-focused `ContactRequestResource` with status updates (**Pending**)
+#### Task 6.3.1 — Build read-focused `ContactRequestResource` with status updates (**Completed**)
 - Disable create action.
 - Keep delete action.
 
@@ -376,7 +376,7 @@ Automated feature tests (acceptance criteria):
 
 ### Phase 6.4: Filament maintenance checks
 
-#### Task 6.4.1 — Run Filament deprecation fixer after Filament code edits (**Pending, recurring**)
+#### Task 6.4.1 — Run Filament deprecation fixer after Filament code edits (**Completed, recurring**)
 - Required because `laraveldaily/filacheck` is installed.
 
 Automated feature tests (acceptance criteria):
